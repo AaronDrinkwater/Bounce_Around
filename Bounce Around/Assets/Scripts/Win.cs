@@ -16,6 +16,9 @@ public class Win : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if(other.gameObject.CompareTag("Ball"))
+        {
+            Debug.Log("YOU FING WON");
+        }
     }
 }
